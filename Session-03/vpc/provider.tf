@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "roboshop-state-file-s3"
-    key = "roboshop-state"
-    dynamodb_table = "roboshop-remote-state-lock"
+    bucket = "dev-roboshop-state-tf"
+    key = "dev-state-file"
+    dynamodb_table = "dev-roboshop-state-lockID"
     region = "us-east-1"
   
  }

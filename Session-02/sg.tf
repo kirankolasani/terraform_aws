@@ -1,7 +1,9 @@
 resource "aws_security_group" "roboshop_sg" {
     name = "roboshop_sg"
+    
     tags = {
       Name = "roboshop_sg"
+      Env = "prod"
     }
 
     dynamic ingress {
